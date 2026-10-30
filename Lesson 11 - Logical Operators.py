@@ -1,5 +1,6 @@
 high_income = True
-good_credit = False
+good_credit = True
+criminal_record = False
 
 if high_income and good_credit:
     print("Eligible for loan")
@@ -16,3 +17,9 @@ if high_income or good_credit:
     
 # Here, or is a logical operator that checks if at least one of the conditions is True. 
 # If either high_income or good_credit is True, the code inside the if block will execute.
+
+if good_credit and not criminal_record:
+    print("Eligible for loan")
+
+# Here, not is a logical operator that negates the condition.
+# If good_credit is True and criminal_record is False (not criminal_record is True), the code inside the if block will execute, printing "Eligible for loan".
